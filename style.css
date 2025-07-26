@@ -381,3 +381,143 @@ section {
         height: 35px;
     }
 }
+
+/* === HERO CONTATTI === */
+.hero-contact {
+    text-align: center;
+    padding: 80px 20px 50px;
+    background: linear-gradient(135deg, #fff0f5, #ffe4e1);
+    color: #333;
+}
+
+.hero-contact h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: #d16b86;
+    margin-bottom: 10px;
+}
+
+.hero-contact p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* === SEZIONE INFO CONTATTO === */
+.enhanced-contact {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.info-box.wide {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    max-width: 500px;
+    text-align: left;
+}
+
+.info-box.wide h2 {
+    color: #d16b86;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.info-box.wide p {
+    color: #555;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.info-box.wide a {
+    color: #d16b86;
+    text-decoration: none;
+}
+
+.info-box.wide a:hover {
+    text-decoration: underline;
+}
+
+/* === FORM CONTATTO === */
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #d16b86;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-grid input,
+.form-grid select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f9f9f9;
+    transition: 0.3s;
+}
+
+.form-grid input:focus,
+.form-grid select:focus,
+textarea:focus {
+    border-color: #d16b86;
+    outline: none;
+    background: #fff;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+textarea:focus {
+    border-color: #d16b86;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    background: #d16b86;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #b94f70;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Torte &amp; Co Cake Lab - Contatti</title>
+    <link rel="icon" href="img.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<header id="navbar" class="navbar" data-aos="fade-down">
+    <div class="container">
+        <img src="img.png" alt="Logo Cake Lab" class="logo">
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contatti.html" class="active">Contatti</a>
+        </nav>
+    </div>
+</header>
+
+<main class="wrapper">
+
+    <section class="hero-contact" data-aos="fade-up">
+        <h1>Contattaci</h1>
+        <p>Hai bisogno di informazioni o vuoi personalizzare una torta? Scrivici!</p>
+    </section>
+
+    <section class="contact-info enhanced-contact" data-aos="fade-up">
+        <div class="info-box wide">
+            <h2>Dove Siamo</h2>
+            <p><strong>📍 Indirizzo:</strong><br>Via Garibaldi, 11, 12060 Grinzane Cavour CN</p>
+            <p><strong>📞 Telefono:</strong><br><a href="tel:+393397166684">+39 3397166684</a></p>
+            <p><strong>📧 Email:</strong><br><a href="mailto:info@torteandco.it">info@torteandco.it</a></p>
+            <p><strong>🕒 Orari di Apertura:</strong><br>
+                Lun–Sab: 08:00–12:30 / 15:30–19:30<br>
+                Domenica: 08:00–13:00</p>
+        </div>
+    </section>
+
+    <section class="contact-form" data-aos="fade-up">
+        <h2>Scrivici un messaggio</h2>
+        <form action="mailto:info@torteandco.it" method="POST" enctype="text/plain">
+            <div class="form-grid">
+                <input type="text" name="Nome" placeholder="Nome e Cognome" required>
+                <input type="email" name="Email" placeholder="Email" required>
+                <input type="tel" name="Telefono" placeholder="Telefono (opzionale)">
+                <select name="Motivo" required>
+                    <option value="">— Motivo del contatto —</option>
+                    <option>Informazioni generali</option>
+                    <option>Ordine personalizzato</option>
+                    <option>Eventi / Catering</option>
+                    <option>Altro</option>
+                </select>
+            </div>
+            <textarea name="Messaggio" rows="5" placeholder="Scrivi qui il tuo messaggio..." required></textarea>
+            <button type="submit" class="btn">Invia Messaggio</button>
+        </form>
+    </section>
+
+</main>
+
+<footer class="footer" data-aos="fade-up">
+    <p>&copy; 2025 Torte &amp; Co Cake Lab - Tutti i diritti riservati</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({ duration:800, once:true });
+</script>
+<script defer src="script.js"></script>
+</body>
+</html>
