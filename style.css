@@ -1,0 +1,217 @@
+
+    /* FONT GLOBALI */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #fff8f0;
+    color: #4b1e1e;
+    overflow-x: hidden;
+}
+h1, h2 {
+    font-family: 'Pacifico', cursive;
+}
+section {
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+.section-title {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease forwards;
+}
+.section-text {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* HERO */
+.hero {
+    background: url('https://media.istockphoto.com/id/466334360/it/foto/non-parlare-nella-zona-di-cupcake.jpg?s=612x612&w=0&k=20&c=jAHfhW41HiWtJ3LfFpEMxtA1wgAvZFn0hxYOnjbigSA=') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff8f0;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    position: relative;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(75,30,30,0.6);
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+.hero h1 span {
+    color: #ffdbac;
+}
+.btn-primary {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background: #ff8c69;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+.btn-primary:hover {
+    transform: scale(1.1);
+}
+
+/* CAROSELLO */
+.carosello {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.slide.active {
+    opacity: 1;
+}
+
+/* GALLERIA */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.gallery-item {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.gallery-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+.footer {
+    background: #4b1e1e;
+    color: #FDF5E6;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* ANIMAZIONI */
+@keyframes fadeInUp {
+    from {opacity:0; transform: translateY(20px);}
+    to {opacity:1; transform: translateY(0);}
+}
+.animate-text {
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* NAVBAR: mantieni i tuoi stili qui sotto */
+/* Navbar base */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #4b1e1e; /* rosso vino */
+    color: #FDF5E6; /* crema */
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    padding: 0.5rem 1.5rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1abc9c;
+}
+
+/* Mobile */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        margin: 0;
+        height: 50px;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        background-color: #4b1e1e; /* rosso scuro */
+        width: 100%;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
+    }
+
+    .nav-links.open {
+        max-height: 500px; /* abbastanza per i link */
+        opacity: 1;
+    }
+
+    .nav-links a {
+        padding: 0.75rem 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
