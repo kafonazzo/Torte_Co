@@ -6,6 +6,7 @@
     <title>Dolci Incantati - Torte Artigianali</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -24,7 +25,7 @@
 </header>
 
 <!-- Hero -->
-<section class="hero">
+<section class="hero" data-aos="fade-up">
     <div class="hero-content">
         <h1 class="animate-text">Benvenuti in <span>Dolci Incantati</span></h1>
         <p class="animate-text">Torte artigianali che conquistano cuore e palato</p>
@@ -34,7 +35,7 @@
 
 <!-- Carosello -->
 
-<div class="carosello">
+<div class="carosello" data-aos="fade-up">
     <div class="slides">
         <div class="slide" style="background-image: url('https://media.istockphoto.com/id/184599041/it/foto/arancia-e-torta-al-cioccolato.jpg?s=612x612&w=0&k=20&c=s3D1oAdMb6sTu6j0WiI48IW6A8KTJqIa1yed_H_rnuY=');"></div>
         <div class="slide" style="background-image: url('https://media.istockphoto.com/id/831559854/it/foto/torta-gelato-alla-vaniglia-con-bacche-congelate.jpg?s=612x612&w=0&k=20&c=W97LChnq_v_jpEyft8gLr-MA7DqTY7N4YIx0A6qqhJQ=');"></div>
@@ -46,24 +47,58 @@
 </div>
 
 <!-- Sezione Chi siamo -->
-<section class="about">
+<section class="about" data-aos="fade-up">
     <h2 class="section-title">La nostra passione</h2>
     <p class="section-text">Ogni torta è un'opera d'arte, creata con amore e ingredienti di prima qualità. Dal classico tiramisù alle torte nuziali più elaborate, il nostro laboratorio realizza dolci che rendono ogni evento speciale.</p>
 </section>
 
 <!-- Galleria animata -->
-<section class="gallery">
+<section class="gallery" data-aos="fade-up">
     <h2 class="section-title">Alcune creazioni</h2>
     <div class="gallery-grid">
-        <div class="gallery-item"><img src="https://media.istockphoto.com/id/1491996147/it/foto/produttore-di-torte.jpg?s=612x612&w=0&k=20&c=MVqBC6VMrLcX7EVhKis8NuzmiOFPUitcIddxqrFH1Mg=" alt="Torta fragole"></div>
-        <div class="gallery-item"><img src="https://media.istockphoto.com/id/1177033957/it/foto/torta-al-tiramis%C3%B9-con-decorazione-al-cioccolato-su-un-piatto-sfondo-in-pietra-grigia-vista.jpg?s=612x612&w=0&k=20&c=UAN-uCu4cDlYJJgi0jj6j7FJkHPSqJwZRmJ0CNIUpJA=" alt="Torta cioccolato"></div>
-        <div class="gallery-item"><img src="https://media.istockphoto.com/id/886019832/it/foto/decorazione-impegno-concetto-di-trattamento-primo-piano-della-torta-deliziosa-cucinata-per.jpg?s=612x612&w=0&k=20&c=0wZhboVDY_AGEQdqrTEjYpaSysNejG6dEc80cw0wt48=" alt="Torta frutta"></div>
-        <div class="gallery-item"><img src="https://media.istockphoto.com/id/2155823444/it/foto/cheesecake-intera-classica-al-forno-con-fragole-e-salsa-torta-di-frutta-e-formaggio-fatta-in.jpg?s=612x612&w=0&k=20&c=dw_z6HDOiS9gBOBnWO8XsFu-P-hF5mUYZhiGs5EYAtc=" alt="Torta nuziale"></div>
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1491996147/it/foto/produttore-di-torte.jpg?s=612x612&w=0&k=20&c=MVqBC6VMrLcX7EVhKis8NuzmiOFPUitcIddxqrFH1Mg=" alt="Torta fragole">
+            <p class="gallery-caption">Torta alle fragole fresche</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1177033957/it/foto/torta-al-tiramis%C3%B9-con-decorazione-al-cioccolato-su-un-piatto-sfondo-in-pietra-grigia-vista.jpg?s=612x612&w=0&k=20&c=UAN-uCu4cDlYJJgi0jj6j7FJkHPSqJwZRmJ0CNIUpJA=" alt="Torta cioccolato">
+            <p class="gallery-caption">Classico tiramisù al cioccolato</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/886019832/it/foto/decorazione-impegno-concetto-di-trattamento-primo-piano-della-torta-deliziosa-cucinata-per.jpg?s=612x612&w=0&k=20&c=0wZhboVDY_AGEQdqrTEjYpaSysNejG6dEc80cw0wt48=" alt="Torta frutta">
+            <p class="gallery-caption">Torta con frutta fresca di stagione</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://media.istockphoto.com/id/2155823444/it/foto/cheesecake-intera-classica-al-forno-con-fragole-e-salsa-torta-di-frutta-e-formaggio-fatta-in.jpg?s=612x612&w=0&k=20&c=dw_z6HDOiS9gBOBnWO8XsFu-P-hF5mUYZhiGs5EYAtc=" alt="Torta nuziale">
+            <p class="gallery-caption">Cheesecake con fragole e salsa al lampone</p>
+        </div>
+    </div>
+</section>
+
+<section class="reviews" data-aos="fade-up">
+    <h2 class="section-title">Cosa dicono i nostri clienti</h2>
+    <div class="reviews-grid">
+        <div class="review-card">
+            <p>"Le torte sono fantastiche, ogni morso è una sorpresa!"</p>
+            <span>- Marco L.</span>
+        </div>
+        <div class="review-card">
+            <p>"Personale gentilissimo e dolci artigianali di altissima qualità."</p>
+            <span>- Giulia M.</span>
+        </div>
+        <div class="review-card">
+            <p>"Il tiramisù migliore che abbia mai assaggiato, consigliatissimo!"</p>
+            <span>- Lorenzo P.</span>
+        </div>
+        <div class="review-card">
+            <p>"Perfetto per ogni occasione, dall’anniversario alla festa di compleanno."</p>
+            <span>- Elena R.</span>
+        </div>
     </div>
 </section>
 
 <!-- Mappa -->
-<section class="map-section">
+<section class="map-section" data-aos="fade-up">
     <h2 class="section-title">Dove ci trovi</h2>
     <div class="map-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2837.965055170486!2d7.975695553844084!3d44.65906561244738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d2b31568d5fe43%3A0x44086a2503ae3789!2sPasticceria%20Torte%26co.%20Cake%20Lab!5e0!3m2!1sit!2sit!4v1753531528989!5m2!1sit!2sit"
@@ -73,7 +108,7 @@
 </section>
 
 <!-- Sezione Social -->
-<section class="social-section">
+<section class="social-section" data-aos="fade-up">
     <h2>Seguici sui social</h2>
     <div class="social-icons">
         <a href="https://www.facebook.com/daniel.predari/" target="_blank" aria-label="Facebook">
@@ -92,10 +127,17 @@
 </section>
 
 <!-- Footer -->
-<footer class="footer">
+<footer class="footer" data-aos="fade-up">
     <p>&copy; 2025 Dolci Incantati - Tutti i diritti riservati</p>
 </footer>
 
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,  // durata animazioni
+        once: true      // animazione solo la prima volta
+    });
+</script>
 </body>
 </html>

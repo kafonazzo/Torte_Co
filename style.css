@@ -44,8 +44,16 @@ section {
     background: rgba(75,30,30,0.6);
 }
 .hero-content {
-    position: relative;
-    z-index: 1;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.2s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .hero h1 span {
     color: #ffdbac;
@@ -146,17 +154,68 @@ section {
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 .gallery-item img {
     width: 100%;
     display: block;
-    transition: transform 0.5s ease;
-}
-.gallery-item:hover img {
-    transform: scale(1.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* MAPPA */
+.gallery-item:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+
+.gallery-caption {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #a84f4f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+/* Recensioni */
+
+.reviews {
+    padding: 50px 20px;
+    background: #fff0f5;
+    text-align: center;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.review-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px 20px;
+    box-shadow: 0 6px 15px rgba(240,128,128,0.3);
+    font-style: italic;
+    color: #5a2a2a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(240,128,128,0.5);
+}
+
+.review-card span {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #c75c5c;
+}
+
+
 /* MAPPA */
 .map-container {
     position: relative;
