@@ -32,29 +32,55 @@ if (menuToggle && navLinks) {
     });
 }
 
-// =====================
-// CAROSELLO AUTOMATICO
-// =====================
-const slides = document.querySelectorAll(".slide");
-let currentSlide = 0;
-const slideInterval = 4000;
+// ========================
+// CAROSELLO SEMPLICE SENZA DUPLICAZIONI
+// ========================
+document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelector(".slides");
+    const slideItems = document.querySelectorAll(".slide");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+    const dotsContainer = document.querySelector(".dots");
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.classList.toggle("active", i === index);
+    let currentIndex = 0;
+
+    // Crea i dots
+    slideItems.forEach((_, index) => {
+        const dot = document.createElement("span");
+        if (index === 0) dot.classList.add("active");
+        dot.addEventListener("click", () => goToSlide(index));
+        dotsContainer.appendChild(dot);
     });
-}
 
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-}
+    const dots = document.querySelectorAll(".dots span");
 
-if (slides.length > 0) {
-    showSlide(currentSlide);
-    setInterval(nextSlide, slideInterval);
-}
+    function updateCarousel() {
+        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        dots.forEach(dot => dot.classList.remove("active"));
+        dots[currentIndex].classList.add("active");
+    }
 
+    function goToSlide(index) {
+        currentIndex = index;
+        updateCarousel();
+    }
+
+    prevBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + slideItems.length) % slideItems.length;
+        updateCarousel();
+    });
+
+    nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % slideItems.length;
+        updateCarousel();
+    });
+
+    // Cambio automatico ogni 4 secondi
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % slideItems.length;
+        updateCarousel();
+    }, 4000);
+});
 // =====================
 // ANIMAZIONE ON SCROLL
 // =====================

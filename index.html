@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dolci Incantati - Torte Artigianali</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="img.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Navbar (TUO CODICE) -->
+<!-- Navbar -->
 <header id="navbar" class="navbar">
     <div class="container">
-        <img src="logo.jpg" alt="Logo" class="logo" />
+        <img src="img.png" alt="Logo" class="logo" />
         <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         <nav id="nav-links" class="nav-links">
             <a href="index.html">Home</a>
@@ -34,17 +33,22 @@
 </section>
 
 <!-- Carosello -->
-<section class="carosello">
-    <div class="slide active" style="background-image: url('https://media.istockphoto.com/id/184599041/it/foto/arancia-e-torta-al-cioccolato.jpg?s=612x612&w=0&k=20&c=s3D1oAdMb6sTu6j0WiI48IW6A8KTJqIa1yed_H_rnuY=');"></div>
-    <div class="slide" style="background-image: url('https://media.istockphoto.com/id/831559854/it/foto/torta-gelato-alla-vaniglia-con-bacche-congelate.jpg?s=612x612&w=0&k=20&c=W97LChnq_v_jpEyft8gLr-MA7DqTY7N4YIx0A6qqhJQ=');"></div>
-    <div class="slide" style="background-image: url('https://media.istockphoto.com/id/1005897744/it/foto/la-chef-cucina-il-pasticcere-decora-la-torta-con-bacche-forestali-concept-making-senza-torte.jpg?s=612x612&w=0&k=20&c=DX4LfI196UDKgl6H4gbYvR-e6e0sb4FNbSJkttsPfxU=');"></div>
-</section>
 
-<!-- Sezione "Chi siamo" -->
+<div class="carosello">
+    <div class="slides">
+        <div class="slide" style="background-image: url('https://media.istockphoto.com/id/184599041/it/foto/arancia-e-torta-al-cioccolato.jpg?s=612x612&w=0&k=20&c=s3D1oAdMb6sTu6j0WiI48IW6A8KTJqIa1yed_H_rnuY=');"></div>
+        <div class="slide" style="background-image: url('https://media.istockphoto.com/id/831559854/it/foto/torta-gelato-alla-vaniglia-con-bacche-congelate.jpg?s=612x612&w=0&k=20&c=W97LChnq_v_jpEyft8gLr-MA7DqTY7N4YIx0A6qqhJQ=');"></div>
+        <div class="slide" style="background-image: url('https://media.istockphoto.com/id/1005897744/it/foto/la-chef-cucina-il-pasticcere-decora-la-torta-con-bacche-forestali-concept-making-senza-torte.jpg?s=612x612&w=0&k=20&c=DX4LfI196UDKgl6H4gbYvR-e6e0sb4FNbSJkttsPfxU=');"></div>
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+    <div class="dots"></div>
+</div>
+
+<!-- Sezione Chi siamo -->
 <section class="about">
     <h2 class="section-title">La nostra passione</h2>
-    <p class="section-text">Ogni torta è un'opera d'arte, creata con amore e ingredienti di prima qualità.
-        Dal classico tiramisù alle torte nuziali più elaborate, il nostro laboratorio realizza dolci che rendono ogni evento speciale.</p>
+    <p class="section-text">Ogni torta è un'opera d'arte, creata con amore e ingredienti di prima qualità. Dal classico tiramisù alle torte nuziali più elaborate, il nostro laboratorio realizza dolci che rendono ogni evento speciale.</p>
 </section>
 
 <!-- Galleria animata -->
@@ -55,6 +59,35 @@
         <div class="gallery-item"><img src="https://media.istockphoto.com/id/1177033957/it/foto/torta-al-tiramis%C3%B9-con-decorazione-al-cioccolato-su-un-piatto-sfondo-in-pietra-grigia-vista.jpg?s=612x612&w=0&k=20&c=UAN-uCu4cDlYJJgi0jj6j7FJkHPSqJwZRmJ0CNIUpJA=" alt="Torta cioccolato"></div>
         <div class="gallery-item"><img src="https://media.istockphoto.com/id/886019832/it/foto/decorazione-impegno-concetto-di-trattamento-primo-piano-della-torta-deliziosa-cucinata-per.jpg?s=612x612&w=0&k=20&c=0wZhboVDY_AGEQdqrTEjYpaSysNejG6dEc80cw0wt48=" alt="Torta frutta"></div>
         <div class="gallery-item"><img src="https://media.istockphoto.com/id/2155823444/it/foto/cheesecake-intera-classica-al-forno-con-fragole-e-salsa-torta-di-frutta-e-formaggio-fatta-in.jpg?s=612x612&w=0&k=20&c=dw_z6HDOiS9gBOBnWO8XsFu-P-hF5mUYZhiGs5EYAtc=" alt="Torta nuziale"></div>
+    </div>
+</section>
+
+<!-- Mappa -->
+<section class="map-section">
+    <h2 class="section-title">Dove ci trovi</h2>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2837.965055170486!2d7.975695553844084!3d44.65906561244738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d2b31568d5fe43%3A0x44086a2503ae3789!2sPasticceria%20Torte%26co.%20Cake%20Lab!5e0!3m2!1sit!2sit!4v1753531528989!5m2!1sit!2sit"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+
+<!-- Sezione Social -->
+<section class="social-section">
+    <h2>Seguici sui social</h2>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/daniel.predari/" target="_blank" aria-label="Facebook">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+        </a>
+        <a href="https://www.instagram.com/labottegadelmugugno_?utm_source=ig_web_button_share_sheet&igsh=cDUzbHB3eG1pdTJm" target="_blank" aria-label="Instagram">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+        </a>
+        <a href="https://www.tripadvisor.it/Restaurant_Review-g194801-d4505905-Reviews-Bottega_del_Buon_Caffe-Loano_Italian_Riviera_Liguria.html" target="_blank" aria-label="Tripadvisor">
+            <img src="https://cdn-icons-png.flaticon.com/128/2504/2504944.png" alt="Tripadvisor" />
+        </a>
+        <a href="https://deliveroo.it/it/menu/alassio/loano/la-bottega-del-mugugno" target="_blank" aria-label="Deliveroo">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAMAAAC7faEHAAAAkFBMVEX////+//8AzLwAzLsAzbwAzL0Ay7wAzbsAy7sAzb0AzL79//8Ay70AzrwAyLgAy7/J8u/e+PVP285x4tc11Me68Ozx/fuU6OPq+fqI5t/L8/Dt+/hZ3NGb5+MAxLIozMBA0sdJ0c1+29hy3dix6Oc60shi2tI2yb/G7+4At6kXwbYvwb8YurSp6uV84twA0bq9wfgzAAADMmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczpleGlmPSJodHRwOi8vbnMuYWRvYmUuY29tL2V4aWYvMS4wLyIgeG1sbnM6SXB0YzR4bXBFeHQ9Imh0dHA6Ly9pcHRjLm9yZy9zdGQvSXB0YzR4bXBFeHQvMjAwOC0wMi0yOS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgZXhpZjpEYXRlVGltZU9yaWdpbmFsPSIyMDI1LTA2LTA2VDAwOjMyOjE4KzAwOjAwIiBJcHRjNHhtcEV4dDpEaWdpdGFsU291cmNlRmlsZVR5cGU9Imh0dHA6Ly9jdi5pcHRjLm9yZy9uZXdzY29kZXMvZGlnaXRhbHNvdXJjZXR5cGUvY29tcG9zaXRlV2l0aFRyYWluZWRBbGdvcml0aG1pY01lZGlhIiBJcHRjNHhtcEV4dDpEaWdpdGFsU291cmNlVHlwZT0iaHR0cDovL2N2LmlwdGMub3JnL25ld3Njb2Rlcy9kaWdpdGFsc291cmNldHlwZS9jb21wb3NpdGVXaXRoVHJhaW5lZEFsZ29yaXRobWljTWVkaWEiIHBob3Rvc2hvcDpDcmVkaXQ9IkVkaXRlZCB3aXRoIEdvb2dsZSBBSSIgcGhvdG9zaG9wOkRhdGVDcmVhdGVkPSIyMDI1LTA2LTA2VDAwOjMyOjE4KzAwOjAwIi8+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+ICAgPD94cGFja2V0IGVuZD0idyI/PizGT8kAAAM2SURBVDiNbZSLdiI3DIaFLPmG7QEWJiQkTNok0+4lu+//dv1lQ9vTUx9gZvA3uvySRd5ndqGGsVhCcD7GCcuX4pxPteLfSJPn4MJ/lnMRMBZzgA0niSZJAF0QxqZjFocnx14zezznpEmYM03K2PQg2PYFlnCvvmFFGFKQvkzml/FmVDPjREvxyqru8OVwRNQupqw+GiceqDN/MCwJr8fA7kRE8373kESUvaepuM45RIlsnWt6PMLOjvo6axAfWan4WErBG2DEpcPjaT/PRxf3tNlut/SEEG0bfh2yZ2UkHI6XYeU5uAttsOgEDvaYJu5hCb7VTbNRG3q5Lrgz7qXBnoffiSOSEKSa4BnejHy6fmwH9xigbxRwaqqbdJA+nLAJ9NJeu9sNrQGuWIrF59jFiKqifI+0tV1ajEMadHBStUzZdAYRDUadD5YluN9W4+D66KpITJaHRmgDEDUOae5R0e9v4zpPUqFGsn7pECogqYb2NOR4fxiG91NCgYZ+EMYywVsi7XNwZ5MZ152HuVIE8RVG4awHWItc37odVGLTy/HeqqIPRGiK0fuikkIsrV1fO7fpcJc55Yx6JCpI1heHbls+1ofTKNzmph79bEmnUnRwrizPD7sz3RjTelSD1qbWBZpJEV57JrpD5z9Wa6ez5UH02jKseeiMhpJ2oJEmPn9+/TbT/P3HmYw7xgxwQt8Xa7w8k6XYHb6jQzuHhy24UnKZwHWVu7xbq9RYc28/2mtBfCChH+NIXl9Ggn/Hf7u+IY1cVJFv9kkUiXR7fbs3Qs/psiC8nMEJFZQrxWVLXd6B300/NkUaHbT6opvj5eb4X4vmJSoCBJfKOOcO9ad7VJubYSua9iQGB2so3fHw83P/D2t+P4zzqtlbvh75opdja9+mZUX57uLsEFHyjEQgDmWbVjhwOC8abfiUZf3c2/l8jskmBoQpSSnjYHBCy9f76LNBlV/XFdW3qQT52PSzmSJGSP/Fea34q10BI1sMVfRBAgcTwUCpNnNB44Izhsml6Hjoool9ouTModTbQqSMkVxFbcKZZ+O4UnX1fxfetNEHGB8x7hdWj6z+qhX3g+suDLbqcvsLSi0vFEFW8SoAAAAASUVORK5CYII=" alt="Tripadvisor" />
+        </a>
     </div>
 </section>
 
